@@ -11,8 +11,19 @@
 </head>
 
 <body>
+    <div class="header">
+        <div id="logo"></div>
+        <div class="links">
+            <button onclick="changeColor(logo,'red')">click me</button>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/gabriel-lobaina">Linked In</a></li>
+                <li><a href="">Contact Me</a></li>
+                <li><a href="">About Me</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="content">
-        <h1>Gabes Code</h1>
+        <h1>About Me</h1>
         <p>
             I am an aspiring front end web-developer,
             I am currently trying to acquire as much
@@ -34,6 +45,20 @@
             successful due to my hustle, motivation, grit, and growth mindset. Will you be that lucky company?
         </p>
     </div>
+    <script>
+        console.log("hello world");
+        var logo = document.getElementById("logo")
+        logo.innerText = "Gabes Code"
+        logo.style.color = "blue"
+        logo.style.fontSize = "32px"
+        logo.style.fontWeight = "bold"
+        //logo.style.color = "red" 
+        function changeColor(element, color) {
+            element.style.color = color
+            alert("Welcome to my page")
+        }
+      //  changeColor(logo, "red")
+    </script>
 
 </body>
 
